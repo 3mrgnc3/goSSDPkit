@@ -1,0 +1,8 @@
+.vscode
+.github
+reference_projects
+build
+logs*
+*.tgz
+*.zip
+*.tar.*

@@ -1,0 +1,611 @@
+/* Microsoft Office 365 Login CSS - Authentic Modern Design */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #323130;
+    font-size: 14px;
+    line-height: 20px;
+    display: block !important;
+    min-height: 100vh;
+}
+
+html, body {
+    height: 100%;
+}
+
+#background_branding_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    z-index: -2;
+}
+
+#background_page_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: -1;
+}
+
+/* Hide the no-script panel */
+#login_no_script_panel {
+    display: none !important;
+}
+
+.login_panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: #ffffff;
+}
+
+.login_panel_layout {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+}
+
+.login_panel_layout_row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#login_panel_left, #login_panel_right {
+    flex: 1;
+}
+
+#login_panel_center {
+    width: 440px;
+    background: #ffffff;
+    padding: 44px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid #e1e1e1;
+    border-radius: 2px;
+    position: relative;
+}
+
+.login_inner_container {
+    width: 100%;
+}
+
+.inner_container {
+    width: 100%;
+}
+
+.login_workload_logo_container {
+    text-align: center;
+    margin-bottom: 24px;
+    min-height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_cta_container {
+    margin-bottom: 32px;
+    text-align: left;
+}
+
+.cta_message_text {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1b1b1b;
+    line-height: 32px;
+    margin-bottom: 0;
+}
+
+.login_cred_container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.login_cred_field_container {
+    margin-bottom: 16px;
+}
+
+.login_textfield.textfield {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #605e5c;
+    border-radius: 2px;
+    font-size: 15px;
+    box-sizing: border-box;
+    background: #ffffff;
+    font-family: inherit;
+    color: #323130;
+}
+
+.login_textfield.textfield:focus {
+    border-color: #0078d4;
+    outline: 1px solid #0078d4;
+    outline-offset: -1px;
+}
+
+.login_textfield.textfield:hover {
+    border-color: #323130;
+}
+
+.button {
+    background: #0078d4;
+    border: 1px solid #0078d4;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 12px 32px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 24px;
+    text-align: center;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover {
+    background: #106ebe;
+    border-color: #106ebe;
+}
+
+.button:active {
+    background: #005a9e;
+    border-color: #005a9e;
+}
+
+.login_cred_options_container {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.persist_text {
+    font-size: 13px;
+    color: #323130;
+    margin-left: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.input_field {
+    display: flex;
+    align-items: center;
+}
+
+.no_display {
+    display: none;
+}
+
+.normaltext {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.subtext {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+/* Logo styling */
+#logo_img {
+    max-height: 24px;
+    width: auto;
+}
+
+/* Form styling */
+form {
+    width: 100%;
+}
+
+form br {
+    display: block;
+    margin: 16px 0;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #605e5c;
+    border-radius: 2px;
+}
+
+/* Label styling */
+label {
+    cursor: pointer;
+    font-size: 13px;
+    color: #323130;
+}
+
+/* Input field containers */
+#cred_userid_container, #cred_password_container {
+    margin-bottom: 16px;
+}
+
+/* Microsoft branding colors */
+.microsoft_blue {
+    color: #0078d4;
+}
+
+.microsoft_text {
+    color: #323130;
+}
+
+/* Loading and focus states */
+.textfield:disabled {
+    background: #f3f2f1;
+    border-color: #d1d1d1;
+    color: #a6a6a6;
+}
+
+/* Error states (for future use) */
+.error {
+    border-color: #d92c20 !important;
+}
+
+.login_form_container {
+    width: 100%;
+}
+
+.login_button_container {
+    margin-top: 24px;
+}
+
+h1.cta_message_text {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1b1b1b;
+    line-height: 32px;
+    margin: 0 0 16px 0;
+}
+
+/* Input placeholder styling */
+.login_textfield::placeholder {
+    color: #605e5c;
+    font-size: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #login_panel_center {
+        width: 100%;
+        max-width: 440px;
+        margin: 20px;
+        padding: 24px;
+        border: none;
+        box-shadow: none;
+    }
+    
+    .login_panel {
+        padding: 10px;
+        background: #f5f5f5;
+    }
+    
+    .cta_message_text {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    #login_panel_center {
+        padding: 16px;
+    }
+    
+    .cta_message_text {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+.login_panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.login_panel_layout {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+}
+
+.login_panel_layout_row {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#login_panel_left, #login_panel_right {
+    flex: 1;
+}
+
+#login_panel_center {
+    width: 440px;
+    background: #ffffff;
+    padding: 44px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    position: relative;
+}
+
+.login_inner_container {
+    width: 100%;
+}
+
+.inner_container {
+    width: 100%;
+}
+
+.login_workload_logo_container {
+    text-align: center;
+    margin-bottom: 32px;
+    min-height: 36px;
+}
+
+.login_cta_container {
+    margin-bottom: 24px;
+}
+
+.cta_message_text {
+    font-size: 24px;
+    font-weight: 600;
+    color: #323130;
+    line-height: 32px;
+    margin-bottom: 16px;
+}
+
+.login_cred_container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.login_cred_field_container {
+    margin-bottom: 16px;
+}
+
+.login_textfield.textfield {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    font-size: 15px;
+    box-sizing: border-box;
+    background: #ffffff;
+    font-family: inherit;
+}
+
+.login_textfield.textfield:focus {
+    border-color: #0078d4;
+    outline: none;
+}
+
+.button {
+    background: #0078d4;
+    border: 1px solid #0078d4;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 12px 32px;
+    border-radius: 2px;
+    font-size: 15px;
+    width: 100%;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.button:hover {
+    background: #106ebe;
+    border-color: #106ebe;
+}
+
+.login_cred_options_container {
+    margin-top: 16px;
+}
+
+.persist_text {
+    font-size: 13px;
+    color: #323130;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.input_field {
+    display: flex;
+    align-items: center;
+}
+
+.no_display {
+    display: none;
+}
+
+.normaltext {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.subtext {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+/* Logo styling */
+#logo_img {
+    max-height: 36px;
+    width: auto;
+}
+
+/* Background image styling */
+#background_background_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Company name text */
+.background_title_text {
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+/* Form styling */
+form {
+    width: 100%;
+}
+
+form br {
+    display: block;
+    margin: 8px 0;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+/* Label styling */
+label {
+    cursor: pointer;
+}
+
+/* Hide login_no_script_panel by default */
+#login_no_script_panel {
+    display: none;
+}
+
+/* Ensure main login panel is visible */
+#login_panel {
+    display: block;
+}
+
+/* Input field containers */
+#cred_userid_container, #cred_password_container {
+    margin-bottom: 16px;
+}
+
+/* Input border styling handled by input elements directly */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #login_panel_center {
+        width: 100%;
+        max-width: 440px;
+        margin: 20px;
+        padding: 24px;
+    }
+    
+    .login_panel {
+        padding: 10px;
+    }
+}
+
+.login_panel_layout {
+    width: 100%;
+    height: 100%;
+}
+
+.login_inner_container {
+    max-width: 400px;
+    background: white;
+    padding: 40px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.cta_message_text {
+    color: #1b1b1b;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.login_textfield {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.button {
+    background: #0078d4;
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    font-size: 15px;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background: #106ebe;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+#background_branding_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(135deg, #0078d4, #005a9e);
+}
+
+.persist_text {
+    font-size: 13px;
+    color: #666;
+}
+
+.no_display {
+    display: none;
+}
+
+.normaltext {
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.subtext {
+    font-size: 13px;
+}

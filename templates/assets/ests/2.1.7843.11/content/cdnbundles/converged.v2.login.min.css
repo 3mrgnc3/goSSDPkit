@@ -1,0 +1,78 @@
+/* Microsoft Azure Login CSS - Simplified Local Version */
+body {
+    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f2f3;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box {
+    background: #ffffff;
+    padding: 44px;
+    width: 440px;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1b1b1b;
+    margin-bottom: 16px;
+}
+
+.input-group {
+    margin-bottom: 16px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    background: #0078d4;
+    border: 1px solid #0078d4;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 12px 32px;
+    border-radius: 2px;
+    font-size: 15px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background: #106ebe;
+    border-color: #106ebe;
+}
+
+.footer-links {
+    margin-top: 24px;
+    font-size: 13px;
+}
+
+.footer-links a {
+    color: #0078d4;
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
